@@ -21,6 +21,16 @@
 
 	<!-- Bootstrap -->
 	<link href="css/main.css" rel="stylesheet">
+  
+  <!-- Analytics -->
+  <script>
+    var trackOutboundLink = function(url) {
+       ga('send', 'event', 'outbound', 'click', url, {
+         'transport': 'beacon',
+         'hitCallback': function(){document.location = url;}
+       });
+    }
+  </script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,7 +51,7 @@
 				</div>
 			</div>
 			<div id="shop" class="text-center">
-				<a href="https://www.etsy.com/shop/laurastouchartcrafts">
+				<a href="https://www.etsy.com/shop/laurastouchartcrafts" onclick="trackOutboundLink('https://www.etsy.com/shop/laurastouchartcrafts'); return false;">
 					<img src="img/store.svg">
 					<p>Shop now ↬</p>
 				</a>
@@ -72,7 +82,7 @@
 			<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1">
 				<p class="txt-large">I create small <strong>decorations</strong>, <strong>pendants</strong>, <strong>bijoux</strong>, everything handmade, without the use of molds, because this is what makes me happy!</p>
 				<p class="top-margin">I use <strong>polymer clay</strong> and all my enthusiasm, to craft cute pets or small decorations.</p>
-				<a class="btn btn-default top-margin" href="https://www.etsy.com/shop/laurastouchartcrafts" role="button">My creations ↬</a>
+				<a class="btn btn-default top-margin" href="https://www.etsy.com/shop/laurastouchartcrafts" onclick="trackOutboundLink('https://www.etsy.com/shop/laurastouchartcrafts'); return false;" role="button">My creations ↬</a>
 
 				<!--				</div> -->
 			</div>
@@ -114,7 +124,7 @@
 	<section>
 		<div class="container-fluid padded footer text-center">
 			<div id="shop">
-				<a href="https://www.etsy.com/shop/laurastouchartcrafts">
+				<a href="https://www.etsy.com/shop/laurastouchartcrafts" onclick="trackOutboundLink('https://www.etsy.com/shop/laurastouchartcrafts'); return false;">
 					<img src="img/store.svg">
 					<p>Shop now ↬</p>
 				</a>
