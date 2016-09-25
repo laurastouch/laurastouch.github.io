@@ -1,5 +1,4 @@
-/_site
-/Gemfile
-/Gemfile.lock
-/bower_components
-/.sass-cache
+/source/_site
+/source/Gemfile
+/source/Gemfile.lock
+/source/.sass-cache

@@ -1,0 +1,260 @@
+.vertical-center {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.shadow-r {
+	-webkit-filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.10)) drop-shadow(30px 30px 10px rgba(85, 68, 60, 0.1));
+	filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.10)) drop-shadow(30px 30px 10px rgba(85, 68, 60, 0.1));
+}
+
+.shadow {
+	-webkit-filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.10)) drop-shadow(0px 30px 10px rgba(85, 68, 60, 0.1));
+	filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.10)) drop-shadow(30px 30px 10px rgba(85, 68, 60, 0.1));
+}
+
+.padded-large {
+	padding: 140px 0;
+}
+
+.padded {
+	padding: 75px 0;
+}
+
+.top-margin {
+	margin-top: 50px;
+}
+
+.btn-default {
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 10px 60px;
+	&:hover {
+		background-color: #fff !important;
+		text-decoration: underline;
+	}
+}
+
+// typography
+.txt-large {
+	font-size: $font-size-large;
+	@media (max-width: $screen-xs-max) {
+		font-size: $font-size-large-xs;
+	}
+}
+
+.caption {
+	font-size: $font-size-small;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-style: italic;
+	margin-top: 15px;
+	padding-left: 15px;
+}
+
+strong {
+	font-weight: 700;
+}
+
+// Hero section	
+.hero {
+	height: 50vh;
+	width: 100vw;
+	background-color: $color-pink;
+}
+
+.hero-alignment {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#brand {
+	position: relative;
+	top: 5vh;
+	#logo {
+		width: 400px;
+		max-width: 75%;
+	}
+}
+
+#shop {
+	position: relative;
+	bottom: 60px;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 300;
+	a {
+		color: $color-brown;
+	}
+	img {
+		width: 45px;
+	}
+	p {
+		margin-top: 5px;
+	}
+}
+
+// Intro
+.capital-letter {
+	font-size: $font-size-capital;
+	font-family: 'Sacramento', serif;
+	color: $color-pink;
+}
+
+.intro {
+	font-family: $font-family-serif;
+	font-size: $font-size-larger;
+	font-weight: 100;
+	position: relative;
+	top: -4em;
+	margin-bottom: -4em;
+	@media (max-width: $screen-xs-max) {
+		font-size: $font-size-larger-xs;
+		top: -6em;
+		margin-bottom: -6em;
+	}
+}
+
+// descriprion
+.description {
+	background-image: linear-gradient(-180deg, #FDFAFA 0%, #FAF4F4 100%);
+	.txt-large {
+		font-family: $font-family-serif;
+		font-weight: 300;
+	}
+	strong {
+		color: $brand-primary;
+	}
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+	}
+}
+
+// bomboninieres
+.bombonnieres {
+	.txt-large {
+		font-family: $font-family-serif;
+		font-weight: 300;
+	}
+	strong {
+		color: $brand-primary;
+	}
+}
+
+// storia
+#ghirlanda {
+	width: 300px;
+	max-width: 75%;
+}
+
+.story-intro {
+	position: relative;
+	top: -12em;
+	margin-bottom: -12em;
+}
+
+.story-title {
+	font-family: 'Sacramento', serif;
+	font-size: $font-size-story-title;
+	color: $brand-primary;
+}
+
+.story {
+	font-size: 1.22em;
+	font-family: $font-family-serif;
+	background-image: linear-gradient(-180deg, #FFF7F7 0%, #FFEBEB 100%);
+	margin-top: 140px;
+	@media (max-width: $screen-xs-max) {
+		font-size: 1em;
+	}
+}
+
+// about
+
+.about-title {
+	font-family: 'Sacramento', serif;
+	font-size: $font-size-story-title;
+	color: $brand-primary;
+}
+
+.about {
+	font-size: 1.22em;
+	font-family: $font-family-serif;
+	background-image: linear-gradient(-180deg, #FFF7F7 0%, #FFEBEB 100%);
+	@media (max-width: $screen-xs-max) {
+		font-size: 1em;
+	}
+  #logo {
+    margin-top: 140px;
+  }
+}
+
+// footer & social
+.footer {
+	background-color: $color-pink;
+}
+
+#socials {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	ul a {
+		margin-right: 15px;
+	}
+	ul a:last-child {
+		margin-right: 0px;
+	}
+	li {
+		display: inline-block;
+	}
+	li:last-child {
+		margin-right: 0px;
+	}
+	#fb {
+		background: url('../img/fb.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+	#tw {
+		background: url('../img/tw.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+	#ig {
+		background: url('../img/ig.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+	#gp {
+		background: url('../img/gp.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+	#yt {
+		background: url('../img/yt.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+	#pi {
+		background: url('../img/pi.svg');
+		background-size: cover;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.copyrights {
+	font-size: 0.7em;
+	color: $color-brown
+}
