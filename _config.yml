@@ -25,4 +25,4 @@ sass:
   sass_dir: bower_components/bootstrap-sass/assets/stylesheets
   style: compressed
 
-exclude: [bower_components, Gemfile, Gemfile.lock]
+exclude: [Gemfile, Gemfile.lock]

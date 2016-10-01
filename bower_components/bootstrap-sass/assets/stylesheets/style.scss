@@ -60,7 +60,7 @@ strong {
 	font-weight: 700;
 }
 
-// Hero section	
+// Hero section
 .hero {
 	height: 70vh;
 	width: 100vw;
@@ -76,9 +76,30 @@ strong {
 #brand {
 	position: relative;
 	top: 5vh;
+	color: $brand-primary;
 	#logo {
-		width: 400px;
+		width: 170px;
 		max-width: 75%;
+	}
+	#title {
+		font-family: 'Sacramento', serif;
+		font-size: ceil(($font-size-h1 * 1.8));
+	}
+	#subtitle {
+		font-family: 'Roboto Condensed', sans-serif;
+		font-size: $font-size-larger-xs;
+		letter-spacing: 12px;
+		position: relative;
+		top: -30px;
+	}
+	@media (max-width: $screen-xs-max) {
+		#title {
+			font-size: ceil(($font-size-h1 * 1.4));
+		}
+		#subtitle {
+			font-size: $font-size-h5;
+			letter-spacing: 10px;
+		}
 	}
 }
 
@@ -204,14 +225,9 @@ strong {
 		padding: 0;
 		margin: 0;
 	}
-	ul a {
-		margin-right: 15px;
-	}
-	ul a:last-child {
-		margin-right: 0px;
-	}
 	li {
 		display: inline-block;
+		margin-right: 15px;
 	}
 	li:last-child {
 		margin-right: 0px;

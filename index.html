@@ -5,20 +5,20 @@
 <html lang="en">
 
 {% include head.html %}
-  
+
 <body>
 	<section>
 		<div class="hero hero-alignment">
 			<div id="brand" class="text-center">
-				<img id="logo" src="img/logoText.png" alt="Laura's Touch, handmade with love" title="Laura's Touch">
-				<div class="hidden">
-					<h1 class="title">Laura's touch</h1>
-					<p class="subtitle">HANDMADE with LOVE</p>
+				<img id="logo" src="img/logo.svg" alt="Laura's Touch, handmade with love" title="Laura's Touch">
+				<div id="header">
+					<h1 id="title">Laura's touch</h1>
+					<p id="subtitle">HANDMADE with LOVE</p>
 				</div>
 			</div>
 			<div id="shop" class="text-center">
 				<a title="Go to my Etsy store" href="https://www.etsy.com/shop/laurastouchartcrafts" onclick="trackOutboundLink('https://www.etsy.com/shop/laurastouchartcrafts'); return false;">
-					<img src="img/store.svg">
+					<img src="img/store.svg" alt="Store">
 					<p>Shop now ↬</p>
 				</a>
 			</div>
@@ -42,7 +42,7 @@
 		<div class="container-fluid padded-large description">
 			<!--			<div class="row"> -->
 			<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-1">
-				<img src="img/orecchini.png" class="img-responsive shadow-r center-block" alt="Orecchini di fimo">
+				<img src="img/orecchini.jpg" class="img-responsive shadow-r center-block" alt="Polymer clay earrings">
 				<p class="caption">Bow earrings</p>
 			</div>
 			<div class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1">
@@ -59,7 +59,7 @@
 		<div class="container-fluid padded-large bombonnieres">
 			<!--			<div class="row"> -->
 			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-				<img src="img/bomboniere.png" class="img-responsive shadow center-block" alt="Bomboniere di fimo">
+				<img src="img/bomboniere.png" class="img-responsive shadow center-block" alt="Polymer clay bonbonnieres">
 			</div>
 			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
 				<p class="txt-large top-margin">I also take custom orders such as <strong>favors</strong> and <strong>bonbonnieres</strong>: me and you will choose together what to create given your budget.</p>
@@ -73,7 +73,7 @@
 		<div class="container-fluid padded-large story">
 			<div class="col-xs-12 text-center story-intro">
 				<img id="ghirlanda" class="center-block" src="img/ghirlanda.png" alt="ghirlanda">
-				<p class="story-title">Once upon a time...</p>
+				<h2 class="story-title">Once upon a time...</h2>
 			</div>
 			<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
 				<p>there was a girl who wanted to grow up and be independent, so she went to live alone. To really feel at home, she began to decorate her little house with handmade tiny little objects; to let everyone know that that was her house, she hanged a beautiful garland on the front door.
@@ -91,31 +91,19 @@
 		<div class="container-fluid padded footer text-center">
 			<div id="shop">
 				<a title="Go to my Etsy store" href="https://www.etsy.com/shop/laurastouchartcrafts" onclick="trackOutboundLink('https://www.etsy.com/shop/laurastouchartcrafts'); return false;">
-					<img src="img/store.svg">
+					<img src="img/store.svg" alt="Store">
 					<p>Shop now ↬</p>
 				</a>
 			</div>
 			<div id="socials" class="top-margin">
 				<p>Follow me</p>
 				<ul>
-					<a title="Facebook" href="https://www.facebook.com/laurastouchartcrafts/">
-						<li class="social" id="fb"></li>
-					</a>
-					<a title="Instagram" href="https://www.instagram.com/laurastouch/">
-						<li class="social" id="ig"></li>
-					</a>
-					<a title="Twitter" href="https://twitter.com/LaurasTouchArt">
-						<li class="social" id="tw"></li>
-					</a>
-					<a title="Google plus" href="https://plus.google.com/+LaurasTouch">
-						<li class="social" id="gp"></li>
-					</a>
-					<a title="Youtube" href="https://www.youtube.com/channel/UC4IyXg30h2M68V-HmQSiPRQ">
-						<li class="social" id="yt"></li>
-					</a>
-					<a title="Pinterest" href="https://it.pinterest.com/laurastouchart/">
-						<li class="social" id="pi"></li>
-					</a>
+          <li class="social" id="fb"><a title="Facebook" href="https://www.facebook.com/laurastouchartcrafts/"></a>					</li>
+          <li class="social" id="ig"><a title="Instagram" href="https://www.instagram.com/laurastouch/"></a></li>
+					<li class="social" id="tw"><a title="Twitter" href="https://twitter.com/LaurasTouchArt"></a></li>
+					<li class="social" id="gp"><a title="Google plus" href="https://plus.google.com/+LaurasTouch"></a></li>
+					<li class="social" id="yt"><a title="Youtube" href="https://www.youtube.com/channel/UC4IyXg30h2M68V-HmQSiPRQ"></a></li>
+					<li class="social" id="pi"><a title="Pinterest" href="https://it.pinterest.com/laurastouchart/"></a></li>
 				</ul>
 			</div>
 			<div class="copyrights top-margin">
